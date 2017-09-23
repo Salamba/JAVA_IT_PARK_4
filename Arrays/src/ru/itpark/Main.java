@@ -20,9 +20,16 @@ public class Main {
             System.out.println(a[z] + " ");
         }
         System.out.println("Элементы в обратном порядке");
-        for (int i = a.length - 1; i >= 0; i--) {
-            System.out.println(a[i]);
+        for (int i = 0; i < n / 2; i++) {
+            int temp, array = 0;
+            temp = a[i];
+            a[i] = a[a.length - 1 - i];
+            a[a.length - 1 - i] = temp;
 
+
+        }
+        for (int g = 0; g < n; g++) {
+            System.out.println(a[g]);
         }
     }
 }
