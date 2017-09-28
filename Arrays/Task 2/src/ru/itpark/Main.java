@@ -1,5 +1,7 @@
-package com.company;
+package ru.itpark;
+
 import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -13,43 +15,48 @@ public class Main {
         System.out.println("4 - удалить позицию №");
         System.out.println("5 - Выход");
         while (true) {
-
             vvod = scanner.nextInt();
-            switch (vvod) {
-                case 1:
-                    System.out.println("Ваш массив ");
-                    for (int i = 0; i < count; i++) {
-                        System.out.print(a[i] + " ");
-                    }
-                    break;
-                case 2:
-                    for (int i = count; i > 0; i--) {
-                        a[i] = a[i - 1];
-                    }
-                    System.out.println("Добавьте число в начало массива: ");
-                    a[0] = scanner.nextInt();
-                    count++;
-                    break;
-                case 3:
-                    System.out.println("Добавьте число в конец массива: ");
-                    a[count] = scanner.nextInt();
-                    count++;
-                    break;
-                case 4:
-                    if (a.length ==0) {
-                        System.out.println("Массив пустой");
-                    }
-                    else {
-                        number = scanner.nextInt();
-                        a[number - 1] = 0;
-                        for (int i = number - 1; i < count; i++) {
-                            a[i] = a[i + 1];
+            if (vvod >= 1 && vvod <= 5) {
+                switch (vvod) {
+                    case 1:
+                        System.out.println("Ваш массив ");
+                        for (int i = 0; i < count; i++) {
+                            System.out.print(a[i] + " ");
                         }
-                        count--;
-                    }
-                case 5:
-                    System.exit(0);
+                        break;
+                    case 2:
+                        for (int i = count; i > 0; i--) {
+                            a[i] = a[i - 1];
+                        }
+                        System.out.println("Добавьте число в начало массива: ");
+                        a[0] = scanner.nextInt();
+                        count++;
+                        break;
+                    case 3:
+                        System.out.println("Добавьте число в конец массива: ");
+                        a[count] = scanner.nextInt();
+                        count++;
+                        break;
+                    case 4:
+                        if (count == 0) {
+                            System.out.println("Массив пустой");
+                            break;
+                        } else {
+                            number = scanner.nextInt();
+                            a[number - 1] = 0;
+                            for (int i = number - 1; i < count; i++) {
+                                a[i] = a[i + 1];
+                            }
+                            count--;
+                            break;
+                        }
+                    case 5:
+                        System.exit(0);
+                }
+            }
+            else {
+                System.out.println("Числа отличаются от 1-5");
+            }
             }
         }
     }
-}
