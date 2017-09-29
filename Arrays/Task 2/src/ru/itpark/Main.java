@@ -30,7 +30,7 @@ public class Main {
                                     s=a[j-1];
                                     a[j-1]=a[j];
                                     a[j]=s;
-                                    // System.out.print(a[j] + " ");
+                                   
                                 }
                             }
                         }
