@@ -42,6 +42,7 @@ public class Main {
                         switch (command)
                         {
                             case 1:
+                                System.out.println("Введите число:");
                                 lists[listNumber].add(scanner.nextInt());
                                 break;
                             case 2:
