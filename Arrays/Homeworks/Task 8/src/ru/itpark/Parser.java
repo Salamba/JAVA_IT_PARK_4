@@ -50,6 +50,7 @@ public class Parser implements Observable {
         }
         if (builder.ConclusionNumber != null) {
             this.observers[count] = builder.ConclusionNumber;
+            count++;
         }
     }
 

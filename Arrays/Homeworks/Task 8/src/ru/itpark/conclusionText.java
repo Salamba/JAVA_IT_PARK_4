@@ -1,6 +1,6 @@
 package ru.itpark;
 
-public class conclusionText implements Observer {
+public class conclusionText implements ru.itpark.Observer {
     public void handleEvent(String Text){
         int aCode;
         int count = 0;
