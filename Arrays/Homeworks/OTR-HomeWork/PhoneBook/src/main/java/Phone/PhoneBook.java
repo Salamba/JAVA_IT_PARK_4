@@ -1,3 +1,10 @@
+package Phone;
+
+import jdk.internal.org.objectweb.asm.tree.analysis.Value;
+
+import javax.lang.model.element.Name;
+import java.io.IOException;
+import java.security.Key;
 import java.util.*;
 
 public class PhoneBook {
@@ -7,16 +14,17 @@ public class PhoneBook {
         phoneMap.put("Сатдаров М.Р", new ArrayList<>(Arrays.asList("+7-917-917-91-17")));
         phoneMap.put("Иванов И.И", new ArrayList<>(Arrays.asList("+8 800 2000 500", "+8-800-200-600")));
         phoneMap.put("Петров П.П", new ArrayList<>(Arrays.asList("+8 800 2000 700")));
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите Ф.И.О абонента:");
-        String namePhone = scanner.nextLine();
-        if (phoneMap.containsKey(namePhone)) {
-            ArrayList<String> numbers = phoneMap.get(namePhone);
-            for (String number : numbers) {
-                System.out.println(number);
+            String namePhone = scanner.nextLine();
+            if (phoneMap.containsKey(namePhone)) {
+                ArrayList<String> numbers = phoneMap.get(namePhone);
+                for (String number : numbers) {
+                    System.out.println(number);
+                }
+            }else {
+                System.err.println("Данный абонент отсутствует в справочнике");
             }
-        } else {
-            System.err.println("Данный абонент отсутствует в справочнике");
-        }
     }
 }
