@@ -1,0 +1,97 @@
+
+body {
+    Background:url("img/12.jpg");
+}
+
+div {
+    margin-left:500px;
+    width: 800px;
+}
+
+ul {
+    list-style: none; /*убираем маркеры списка*/
+    margin: 0; /*убираем отступы*/
+    padding-left: 0; /*убираем отступы*/
+    margin-top:25px; /*делаем отступ сверху*/
+}
+ol {
+    padding-left: 40px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+#ida  {
+    text-decoration: none; /*убираем подчеркивание текста ссылок*/
+    background: chocolate; /*добавляем фон к пункту меню*/
+    color:#fff; /*меняем цвет ссылок*/
+    padding:10px; /*добавляем отступ*/
+    font-family: "Rage Italic"; /*меняем шрифт*/
+    border-radius:4px; /*добавляем скругление*/
+    -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+    -o-transition: all 0.3s 0.01s ease;
+    -webkit-transition: all 0.3s 0.01s ease;
+}
+#ida:hover {
+    background: aqua;/*добавляем эффект при наведении*/
+}
+li {
+    float:left; /*Размещаем список горизонтально для реализации меню*/
+    margin-right:5px; /*Добавляем отступ у пунктов меню*/
+    }
+#idlistjewerly {
+    text-decoration: none; /*убираем подчеркивание текста ссылок*/
+    background:#f6f6f6; /*добавляем фон к пункту меню*/
+    color: #111111; /*меняем цвет ссылок*/
+    padding:5px; /*добавляем отступ*/
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /*меняем шрифт*/
+    border-radius:4px; /*добавляем скругление*/
+    -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+    -o-transition: all 0.3s 0.01s ease;
+    -webkit-transition: all 0.3s 0.01s ease;
+    width: 400px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+#idcontact{
+    text-decoration: none; /*убираем подчеркивание текста ссылок*/
+    background:#f6f6f6; /*добавляем фон к пункту меню*/
+    color:#111111; /*меняем цвет ссылок*/
+    padding:5px; /*добавляем отступ*/
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /*меняем шрифт*/
+    border-radius:4px; /*добавляем скругление*/
+    -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+    -o-transition: all 0.3s 0.01s ease;
+    -webkit-transition: all 0.3s 0.01s ease;
+    width: 474px;
+    margin-bottom: 5px;
+}
+#idlistjewerlymodels {
+    text-decoration: none; /*убираем подчеркивание текста ссылок*/
+    background: #f6f6f6; /*добавляем фон к пункту меню*/
+    color: #111111; /*меняем цвет ссылок*/
+    padding: 5px; /*добавляем отступ*/
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /*меняем шрифт*/
+    border-radius: 4px; /*добавляем скругление*/
+    -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+    -o-transition: all 0.3s 0.01s ease;
+    -webkit-transition: all 0.3s 0.01s ease;
+    width: 400px;
+    margin-bottom: 5px;
+}
+.notice-success {
+    background: #67b11c;
+    background: linear-gradient(#72c41f, #5c9e19);
+    border-radius: 5px;
+    color: #fff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 15px 20px;
+    width: 355px;
+}
+.contact-success{
+    background: #67b11c;
+    background: linear-gradient(#72c41f, #5c9e19);
+    border-radius: 5px;
+    color: #fff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 15px 20px;
+    width: 355px;
+}
